@@ -1669,7 +1669,7 @@ class FlathubGithubHandler(GitHubEventHandler):
             return self.handle_bot_build(payload, event, build_id, arch)
 
         # No known command
-        githubApiPostComment(issue_url, "I'm sorry, i did not understand that command.").addCallback(githubCommentDone)
+        githubApiPostComment(issue_url, "I'm sorry, I did not understand that command.").addCallback(githubCommentDone)
         return [], 'git'
 
 
